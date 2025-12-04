@@ -5,7 +5,7 @@ litex/
 ├── run.sh                     # 启动训练的 Shell 脚本
 ├── tools.py                   # 工具函数（数据处理、代码验证等）
 │
-├── dataset/
+├── dataset/ \n
 │   ├── train_litex.json       # 训练数据集
 │   ├── test_litex.json        # 测试数据集
 │   └── dataset_test_100.json  # 用于自我修正评估的100个样本
