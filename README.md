@@ -1,21 +1,19 @@
+```bash
 litex/
-
 ├── train.py                   # 模型微调脚本
 ├── out.py                     # 带自我修正的评估脚本
 ├── run.sh                     # 启动训练的 Shell 脚本
-├── tools.py                   # 工具函数（数据处理、代码验证等）
-│
-├── dataset/ \n
+├── tools.py                   # 工具函数
+├── dataset/                   # 数据集目录
 │   ├── train_litex.json       # 训练数据集
 │   ├── test_litex.json        # 测试数据集
-│   └── dataset_test_100.json  # 用于自我修正评估的100个样本
-│
-├── results/
-│   ├── checkpoint-*/          # 训练过程中保存的模型权重
-│   └── runs/                    # TensorBoard 日志
-│
-└── evaluation_logs_retry/
-    └── retry_results_*.json   
+│   └── dataset_test_100.json  # 评估样本
+├── results/                   # 训练结果
+│   ├── checkpoint-*/          # 模型权重
+│   └── runs/                  # TensorBoard 日志
+└── evaluation_logs_retry/     # 评估日志
+    └── retry_results_*.json   # 评估结果
+```
     
 
 ```
