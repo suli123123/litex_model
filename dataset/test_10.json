@@ -1,0 +1,17 @@
+[
+    {
+        "id": "gsm8k_863",
+        "nl_problem": "Question:Every hour, Paige can bake 2 banana bread loaves in the oven.  Each banana bread loaf is cut into 8 slices and wrapped individually for sale.  Each slice is sold for 50 cents for a fundraiser.  If she baked from 1:00 PM - 6:00 PM straight, and sold all the slices, how much did she raise in dollars?",
+        "formal_statement": "claim:\n    forall start, end, hours, rate_per_hour, total_loaves, slices_per_loaf, total_slices, price_per_slice, total_money R:\n        start = 1\n        end = 6\n        hours = end - start\n        rate_per_hour = 2\n        total_loaves = hours * rate_per_hour\n        slices_per_loaf = 8\n        total_slices = total_loaves * slices_per_loaf\n        price_per_slice = 0.5\n        total_money = total_slices * price_per_slice\n        =>:\n            total_money = 40\n    prove:\n        hours = 6 - 1\n        hours = 5\n\n        total_loaves = 5 * 2\n        total_loaves = 10\n\n        total_slices = 10 * 8\n        total_slices = 80\n\n        total_money = 80 * 0.5\n        total_money = 40"
+    },
+    {
+        "id": "Math23k_16708",
+        "nl_problem": "Question:粮店运来面粉500袋，比运来的大米少20%．运来大米多少袋？",
+        "formal_statement": "claim:\n    forall flour, rice R:\n        flour = 500\n        flour = rice - 0.2 * rice\n        =>:\n            rice = 625\n    prove:\n        flour = 500\n        500 = rice - 0.2 * rice\n        500 = 0.8 * rice\n        rice = 500 / 0.8 = 625"
+    },
+    {
+        "id": "Math23k_16584",
+        "nl_problem": "Question:甲、乙两站相距354千米，一列客车和一列货车同时从两站相对开出3小时后两车相遇，已知客车每小时行62千米，货车每小时行多少千米？",
+        "formal_statement": "claim:\n    forall x R:\n        62 * 3 + 3 * x = 354\n        =>:\n            x = 56\n    prove:\n        62 * 3 = 186\n        186 + 3 * x = 354\n        3 * x = 354 - 186\n        3 * x = 168\n        x = 168 / 3\n        x = 56"
+    }
+]
