@@ -7,7 +7,7 @@ from openai import OpenAI, APIStatusError, APIError
 import tqdm
 
 # 建议在实际使用中放入环境变量
-API_KEY = "sk-cb0af71536e046e4b9d8cf9f5d9660a7"
+API_KEY = "sk-xxxxxxx" # 使用的是同义千问v1模型
 
 def verify_litex_syntax(message: str) -> tuple[bool, str]:
     """
